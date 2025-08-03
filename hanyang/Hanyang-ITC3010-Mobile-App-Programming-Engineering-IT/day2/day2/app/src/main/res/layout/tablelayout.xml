@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="50dp"
+                android:background="#FF9800" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="2"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="50dp"
+                android:background="#FF9800" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="3"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="50dp"
+                android:background="#FF9800" />
+        </TableRow>
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:layout_margin="5dp"
+                android:background="#FF9800"
+                android:gravity="center"
+                android:text="space"
+                android:textSize="50dp"
+                android:layout_span="3"/>
+
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
