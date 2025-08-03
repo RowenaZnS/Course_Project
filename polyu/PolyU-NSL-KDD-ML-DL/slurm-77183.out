@@ -1,0 +1,32 @@
+Using GPU: NVIDIA L4
+Using GPU: NVIDIA L4
+Using GPU: NVIDIA L4
+Using GPU: NVIDIA L4
+-------------------------------------------------------------------------------
+Total epoch: 100 | Iterations in epoch: 100| Minibatch from mem size: 100 | Total Samples: 10000|
+-------------------------------------------------------------------------------
+Dataset shape: (125973, 162)
+-------------------------------------------------------------------------------
+Attacker parameters: Num_actions=23 | gamma=0.001 | epsilon=1 | ANN hidden size=100 | ANN hidden layers=3|
+-------------------------------------------------------------------------------
+Defense parameters: Num_actions=5 | gamma=0.001 | epsilon=1 | ANN hidden size=100 | ANN hidden layers=5|
+-------------------------------------------------------------------------------
+
+|Epoch 000/100| time: 1.17|
+|Def Loss 0.0000 | Def Reward in ep 016|
+|Att Loss 0.0000 | Att Reward in ep 084|
+|Def Estimated: [23 23 22 14 18]| Att Labels: [ 5 35 19 31 10]
+Traceback (most recent call last):
+  File "/data/users/liuxinya/hk/Course_Project/polyu/PolyU-NSL-KDD-ML-DL/multi_agent.py", line 779, in <module>
+    defender_actions = defender_agent.act(states)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/users/liuxinya/hk/Course_Project/polyu/PolyU-NSL-KDD-ML-DL/multi_agent.py", line 511, in act
+    actions = self.policy.get_actions(states)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/users/liuxinya/hk/Course_Project/polyu/PolyU-NSL-KDD-ML-DL/multi_agent.py", line 359, in get_actions
+    self.Q = self.estimator.predict(states,states.shape[0])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/users/liuxinya/hk/Course_Project/polyu/PolyU-NSL-KDD-ML-DL/multi_agent.py", line 287, in predict
+    state_tensor = torch.FloatTensor(state).to(self.device)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not determine the shape of object type 'DataFrame'

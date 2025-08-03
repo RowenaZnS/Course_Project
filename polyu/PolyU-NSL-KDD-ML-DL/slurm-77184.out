@@ -1,0 +1,518 @@
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+Using GPU: NVIDIA L4
+Using GPU: NVIDIA L4
+Using GPU: NVIDIA L4
+Using GPU: NVIDIA L4
+-------------------------------------------------------------------------------
+Total epoch: 100 | Iterations in epoch: 100| Minibatch from mem size: 100 | Total Samples: 10000|
+-------------------------------------------------------------------------------
+Dataset shape: (125973, 162)
+-------------------------------------------------------------------------------
+Attacker parameters: Num_actions=23 | gamma=0.001 | epsilon=1 | ANN hidden size=100 | ANN hidden layers=3|
+-------------------------------------------------------------------------------
+Defense parameters: Num_actions=5 | gamma=0.001 | epsilon=1 | ANN hidden size=100 | ANN hidden layers=5|
+-------------------------------------------------------------------------------
+
+|Epoch 000/100| time: 1.04|
+|Def Loss 0.0000 | Def Reward in ep 018|
+|Att Loss 0.0000 | Att Reward in ep 082|
+|Def Estimated: [19 22 18 20 21]| Att Labels: [ 6 28 16 32 18]
+
+|Epoch 001/100| time: 2.24|
+|Def Loss 1.7839 | Def Reward in ep 030|
+|Att Loss 1.1025 | Att Reward in ep 070|
+|Def Estimated: [ 3  9  7 76  5]| Att Labels: [ 2 30 19 31 18]
+
+|Epoch 002/100| time: 1.94|
+|Def Loss 0.9859 | Def Reward in ep 039|
+|Att Loss 0.3316 | Att Reward in ep 061|
+|Def Estimated: [ 1 46  0 48  5]| Att Labels: [ 3 21 40 27  9]
+
+|Epoch 003/100| time: 1.77|
+|Def Loss 0.5774 | Def Reward in ep 055|
+|Att Loss 0.3301 | Att Reward in ep 045|
+|Def Estimated: [ 0 30  0 31 39]| Att Labels: [ 3 17 28 30 22]
+
+|Epoch 004/100| time: 1.75|
+|Def Loss 0.3677 | Def Reward in ep 088|
+|Att Loss 0.3648 | Att Reward in ep 012|
+|Def Estimated: [ 0 24 22 30 24]| Att Labels: [ 0 23 31 33 13]
+
+|Epoch 005/100| time: 1.67|
+|Def Loss 0.2065 | Def Reward in ep 087|
+|Att Loss 0.4015 | Att Reward in ep 013|
+|Def Estimated: [ 4 27 17 38 14]| Att Labels: [13 22 15 35 15]
+
+|Epoch 006/100| time: 1.87|
+|Def Loss 0.2300 | Def Reward in ep 083|
+|Att Loss 0.3994 | Att Reward in ep 017|
+|Def Estimated: [ 9 32 21 30  8]| Att Labels: [19 24 19 32  6]
+
+|Epoch 007/100| time: 1.59|
+|Def Loss 0.2057 | Def Reward in ep 090|
+|Att Loss 0.3788 | Att Reward in ep 010|
+|Def Estimated: [ 8 22 23 31 16]| Att Labels: [12 21 22 33 12]
+
+|Epoch 008/100| time: 1.76|
+|Def Loss 0.1904 | Def Reward in ep 087|
+|Att Loss 0.3633 | Att Reward in ep 013|
+|Def Estimated: [ 9 20 21 33 17]| Att Labels: [16 19 21 33 11]
+
+|Epoch 009/100| time: 1.60|
+|Def Loss 0.1798 | Def Reward in ep 091|
+|Att Loss 0.3442 | Att Reward in ep 009|
+|Def Estimated: [ 6 24 25 28 17]| Att Labels: [ 8 24 27 26 15]
+
+|Epoch 010/100| time: 1.72|
+|Def Loss 0.1343 | Def Reward in ep 089|
+|Att Loss 0.2989 | Att Reward in ep 011|
+|Def Estimated: [10 23 21 32 14]| Att Labels: [16 22 19 29 14]
+
+|Epoch 011/100| time: 1.79|
+|Def Loss 0.1791 | Def Reward in ep 091|
+|Att Loss 0.2258 | Att Reward in ep 009|
+|Def Estimated: [13 21 12 37 17]| Att Labels: [19 20 10 34 17]
+
+|Epoch 012/100| time: 1.84|
+|Def Loss 0.1758 | Def Reward in ep 087|
+|Att Loss 0.1444 | Att Reward in ep 013|
+|Def Estimated: [ 9 16 19 38 18]| Att Labels: [20 14 18 31 17]
+
+|Epoch 013/100| time: 1.74|
+|Def Loss 0.1506 | Def Reward in ep 091|
+|Att Loss 0.0890 | Att Reward in ep 009|
+|Def Estimated: [10 22 17 29 22]| Att Labels: [17 20 12 31 20]
+
+|Epoch 014/100| time: 1.86|
+|Def Loss 0.1422 | Def Reward in ep 093|
+|Att Loss 0.0544 | Att Reward in ep 007|
+|Def Estimated: [15 29 13 36  7]| Att Labels: [20 26 12 37  5]
+
+|Epoch 015/100| time: 1.82|
+|Def Loss 0.1229 | Def Reward in ep 088|
+|Att Loss 0.0437 | Att Reward in ep 012|
+|Def Estimated: [14 23 14 30 19]| Att Labels: [19 23 10 28 20]
+
+|Epoch 016/100| time: 1.76|
+|Def Loss 0.0851 | Def Reward in ep 092|
+|Att Loss 0.0437 | Att Reward in ep 008|
+|Def Estimated: [12 16 20 30 22]| Att Labels: [17 14 17 31 21]
+
+|Epoch 017/100| time: 1.80|
+|Def Loss 0.1048 | Def Reward in ep 087|
+|Att Loss 0.0410 | Att Reward in ep 013|
+|Def Estimated: [11 19 20 39 11]| Att Labels: [16 20 17 40  7]
+
+|Epoch 018/100| time: 1.73|
+|Def Loss 0.1008 | Def Reward in ep 089|
+|Att Loss 0.0402 | Att Reward in ep 011|
+|Def Estimated: [10 25 24 29 12]| Att Labels: [14 25 18 31 12]
+
+|Epoch 019/100| time: 1.93|
+|Def Loss 0.1160 | Def Reward in ep 082|
+|Att Loss 0.0315 | Att Reward in ep 018|
+|Def Estimated: [13 20 15 40 12]| Att Labels: [21 19 14 36 10]
+
+|Epoch 020/100| time: 1.93|
+|Def Loss 0.1333 | Def Reward in ep 089|
+|Att Loss 0.0383 | Att Reward in ep 011|
+|Def Estimated: [15 31 14 20 20]| Att Labels: [20 31 12 21 16]
+
+|Epoch 021/100| time: 1.78|
+|Def Loss 0.1001 | Def Reward in ep 092|
+|Att Loss 0.0317 | Att Reward in ep 008|
+|Def Estimated: [15 26  9 31 19]| Att Labels: [18 25  6 34 17]
+
+|Epoch 022/100| time: 1.72|
+|Def Loss 0.0777 | Def Reward in ep 090|
+|Att Loss 0.0318 | Att Reward in ep 010|
+|Def Estimated: [14 19 20 24 23]| Att Labels: [16 20 18 26 20]
+
+|Epoch 023/100| time: 1.83|
+|Def Loss 0.0879 | Def Reward in ep 091|
+|Att Loss 0.0293 | Att Reward in ep 009|
+|Def Estimated: [11 32  8 27 22]| Att Labels: [16 33  5 28 18]
+
+|Epoch 024/100| time: 1.73|
+|Def Loss 0.0909 | Def Reward in ep 088|
+|Att Loss 0.0359 | Att Reward in ep 012|
+|Def Estimated: [ 9 27 20 25 19]| Att Labels: [13 27 16 25 19]
+
+|Epoch 025/100| time: 1.66|
+|Def Loss 0.0972 | Def Reward in ep 094|
+|Att Loss 0.0303 | Att Reward in ep 006|
+|Def Estimated: [ 9 33  9 28 21]| Att Labels: [12 31  9 24 24]
+
+|Epoch 026/100| time: 1.64|
+|Def Loss 0.0930 | Def Reward in ep 089|
+|Att Loss 0.0277 | Att Reward in ep 011|
+|Def Estimated: [ 5 27 23 20 25]| Att Labels: [10 25 23 19 23]
+
+|Epoch 027/100| time: 1.77|
+|Def Loss 0.0839 | Def Reward in ep 086|
+|Att Loss 0.0280 | Att Reward in ep 014|
+|Def Estimated: [16 33 11 18 22]| Att Labels: [20 33  7 23 17]
+
+|Epoch 028/100| time: 1.73|
+|Def Loss 0.0913 | Def Reward in ep 093|
+|Att Loss 0.0252 | Att Reward in ep 007|
+|Def Estimated: [ 8 30 17 24 21]| Att Labels: [11 31 16 24 18]
+
+|Epoch 029/100| time: 1.72|
+|Def Loss 0.0993 | Def Reward in ep 092|
+|Att Loss 0.0239 | Att Reward in ep 008|
+|Def Estimated: [ 6 30  6 34 24]| Att Labels: [13 27  6 32 22]
+
+|Epoch 030/100| time: 1.51|
+|Def Loss 0.0758 | Def Reward in ep 092|
+|Att Loss 0.0257 | Att Reward in ep 008|
+|Def Estimated: [ 4 28 18 32 18]| Att Labels: [ 7 28 16 31 18]
+
+|Epoch 031/100| time: 1.69|
+|Def Loss 0.0741 | Def Reward in ep 094|
+|Att Loss 0.0291 | Att Reward in ep 006|
+|Def Estimated: [11 28 14 27 20]| Att Labels: [12 29 12 29 18]
+
+|Epoch 032/100| time: 1.84|
+|Def Loss 0.0838 | Def Reward in ep 088|
+|Att Loss 0.0337 | Att Reward in ep 012|
+|Def Estimated: [13 33 12 29 13]| Att Labels: [16 29 12 28 15]
+
+|Epoch 033/100| time: 1.68|
+|Def Loss 0.1099 | Def Reward in ep 093|
+|Att Loss 0.0298 | Att Reward in ep 007|
+|Def Estimated: [ 7 34 15 24 20]| Att Labels: [11 33 15 25 16]
+
+|Epoch 034/100| time: 1.69|
+|Def Loss 0.0946 | Def Reward in ep 097|
+|Att Loss 0.0288 | Att Reward in ep 003|
+|Def Estimated: [ 7 29 14 27 23]| Att Labels: [10 29 13 27 21]
+
+|Epoch 035/100| time: 1.69|
+|Def Loss 0.0994 | Def Reward in ep 093|
+|Att Loss 0.0257 | Att Reward in ep 007|
+|Def Estimated: [10 30 13 32 15]| Att Labels: [13 30 11 34 12]
+
+|Epoch 036/100| time: 1.84|
+|Def Loss 0.1097 | Def Reward in ep 093|
+|Att Loss 0.0307 | Att Reward in ep 007|
+|Def Estimated: [12 21 21 32 14]| Att Labels: [17 20 19 31 13]
+
+|Epoch 037/100| time: 1.49|
+|Def Loss 0.1232 | Def Reward in ep 091|
+|Att Loss 0.0222 | Att Reward in ep 009|
+|Def Estimated: [ 3 24 21 30 22]| Att Labels: [ 7 22 18 32 21]
+
+|Epoch 038/100| time: 1.80|
+|Def Loss 0.1260 | Def Reward in ep 089|
+|Att Loss 0.0245 | Att Reward in ep 011|
+|Def Estimated: [14 18 15 35 18]| Att Labels: [19 16 12 32 21]
+
+|Epoch 039/100| time: 1.82|
+|Def Loss 0.1307 | Def Reward in ep 090|
+|Att Loss 0.0330 | Att Reward in ep 010|
+|Def Estimated: [15 20 20 35 10]| Att Labels: [20 22 18 32  8]
+
+|Epoch 040/100| time: 1.68|
+|Def Loss 0.1315 | Def Reward in ep 096|
+|Att Loss 0.0322 | Att Reward in ep 004|
+|Def Estimated: [12 29 10 33 16]| Att Labels: [14 29 11 31 15]
+
+|Epoch 041/100| time: 1.74|
+|Def Loss 0.1254 | Def Reward in ep 088|
+|Att Loss 0.0367 | Att Reward in ep 012|
+|Def Estimated: [ 9 27  6 41 17]| Att Labels: [17 24  9 35 15]
+
+|Epoch 042/100| time: 1.63|
+|Def Loss 0.1253 | Def Reward in ep 096|
+|Att Loss 0.0352 | Att Reward in ep 004|
+|Def Estimated: [10 16 20 37 17]| Att Labels: [13 17 19 35 16]
+
+|Epoch 043/100| time: 1.75|
+|Def Loss 0.0888 | Def Reward in ep 094|
+|Att Loss 0.0413 | Att Reward in ep 006|
+|Def Estimated: [11 28 16 30 15]| Att Labels: [15 27 13 30 15]
+
+|Epoch 044/100| time: 1.71|
+|Def Loss 0.0912 | Def Reward in ep 094|
+|Att Loss 0.0382 | Att Reward in ep 006|
+|Def Estimated: [11 19 18 36 16]| Att Labels: [16 18 15 35 16]
+
+|Epoch 045/100| time: 1.66|
+|Def Loss 0.1046 | Def Reward in ep 091|
+|Att Loss 0.0375 | Att Reward in ep 009|
+|Def Estimated: [ 9 25 17 39 10]| Att Labels: [14 24 15 38  9]
+
+|Epoch 046/100| time: 1.65|
+|Def Loss 0.0922 | Def Reward in ep 094|
+|Att Loss 0.0457 | Att Reward in ep 006|
+|Def Estimated: [10 25 18 33 14]| Att Labels: [12 25 17 32 14]
+
+|Epoch 047/100| time: 1.62|
+|Def Loss 0.0713 | Def Reward in ep 097|
+|Att Loss 0.0472 | Att Reward in ep 003|
+|Def Estimated: [11 29 13 35 12]| Att Labels: [14 28 11 35 12]
+
+|Epoch 048/100| time: 1.71|
+|Def Loss 0.0715 | Def Reward in ep 093|
+|Att Loss 0.0469 | Att Reward in ep 007|
+|Def Estimated: [11 22 13 38 16]| Att Labels: [16 21 11 36 16]
+
+|Epoch 049/100| time: 1.66|
+|Def Loss 0.0647 | Def Reward in ep 095|
+|Att Loss 0.0413 | Att Reward in ep 005|
+|Def Estimated: [11 21 17 32 19]| Att Labels: [15 20 15 30 20]
+
+|Epoch 050/100| time: 1.69|
+|Def Loss 0.0619 | Def Reward in ep 091|
+|Att Loss 0.0334 | Att Reward in ep 009|
+|Def Estimated: [10 31 13 36 10]| Att Labels: [14 29 12 37  8]
+
+|Epoch 051/100| time: 1.81|
+|Def Loss 0.0701 | Def Reward in ep 095|
+|Att Loss 0.0397 | Att Reward in ep 005|
+|Def Estimated: [16 23 17 32 12]| Att Labels: [19 23 15 33 10]
+
+|Epoch 052/100| time: 1.64|
+|Def Loss 0.0831 | Def Reward in ep 093|
+|Att Loss 0.0387 | Att Reward in ep 007|
+|Def Estimated: [11 24 16 36 13]| Att Labels: [15 24 16 31 14]
+
+|Epoch 053/100| time: 1.72|
+|Def Loss 0.0802 | Def Reward in ep 094|
+|Att Loss 0.0353 | Att Reward in ep 006|
+|Def Estimated: [12 22 13 38 15]| Att Labels: [17 20 12 37 14]
+
+|Epoch 054/100| time: 1.70|
+|Def Loss 0.0832 | Def Reward in ep 094|
+|Att Loss 0.0370 | Att Reward in ep 006|
+|Def Estimated: [12 27  7 40 14]| Att Labels: [16 24  7 40 13]
+
+|Epoch 055/100| time: 1.66|
+|Def Loss 0.0757 | Def Reward in ep 092|
+|Att Loss 0.0286 | Att Reward in ep 008|
+|Def Estimated: [11 24 13 38 14]| Att Labels: [15 22 15 35 13]
+
+|Epoch 056/100| time: 1.61|
+|Def Loss 0.0815 | Def Reward in ep 097|
+|Att Loss 0.0249 | Att Reward in ep 003|
+|Def Estimated: [12 17 17 39 15]| Att Labels: [12 16 18 39 15]
+
+|Epoch 057/100| time: 1.78|
+|Def Loss 0.0750 | Def Reward in ep 091|
+|Att Loss 0.0211 | Att Reward in ep 009|
+|Def Estimated: [11 25 21 29 14]| Att Labels: [18 22 19 28 13]
+
+|Epoch 058/100| time: 1.60|
+|Def Loss 0.0991 | Def Reward in ep 096|
+|Att Loss 0.0214 | Att Reward in ep 004|
+|Def Estimated: [ 9 23 18 38 12]| Att Labels: [13 21 18 36 12]
+
+|Epoch 059/100| time: 1.62|
+|Def Loss 0.0910 | Def Reward in ep 094|
+|Att Loss 0.0191 | Att Reward in ep 006|
+|Def Estimated: [ 9 24 11 38 18]| Att Labels: [14 20 11 37 18]
+
+|Epoch 060/100| time: 1.86|
+|Def Loss 0.0809 | Def Reward in ep 092|
+|Att Loss 0.0215 | Att Reward in ep 008|
+|Def Estimated: [16 27 20 24 13]| Att Labels: [21 23 20 23 13]
+
+|Epoch 061/100| time: 1.77|
+|Def Loss 0.0564 | Def Reward in ep 095|
+|Att Loss 0.0215 | Att Reward in ep 005|
+|Def Estimated: [14 26 21 34  5]| Att Labels: [18 22 21 34  5]
+
+|Epoch 062/100| time: 1.71|
+|Def Loss 0.0560 | Def Reward in ep 096|
+|Att Loss 0.0223 | Att Reward in ep 004|
+|Def Estimated: [14 17 25 22 22]| Att Labels: [15 16 25 24 20]
+
+|Epoch 063/100| time: 1.94|
+|Def Loss 0.0627 | Def Reward in ep 091|
+|Att Loss 0.0184 | Att Reward in ep 009|
+|Def Estimated: [15 20 21 35  9]| Att Labels: [24 17 19 32  8]
+
+|Epoch 064/100| time: 1.71|
+|Def Loss 0.0604 | Def Reward in ep 091|
+|Att Loss 0.0168 | Att Reward in ep 009|
+|Def Estimated: [13 20 19 26 22]| Att Labels: [18 18 20 25 19]
+
+|Epoch 065/100| time: 1.71|
+|Def Loss 0.0545 | Def Reward in ep 091|
+|Att Loss 0.0195 | Att Reward in ep 009|
+|Def Estimated: [10 29 25 24 12]| Att Labels: [14 28 23 24 11]
+
+|Epoch 066/100| time: 1.75|
+|Def Loss 0.0390 | Def Reward in ep 095|
+|Att Loss 0.0267 | Att Reward in ep 005|
+|Def Estimated: [12 28 19 25 16]| Att Labels: [16 27 16 25 16]
+
+|Epoch 067/100| time: 1.59|
+|Def Loss 0.0373 | Def Reward in ep 091|
+|Att Loss 0.0299 | Att Reward in ep 009|
+|Def Estimated: [ 8 19 19 35 19]| Att Labels: [11 19 19 35 16]
+
+|Epoch 068/100| time: 1.69|
+|Def Loss 0.0249 | Def Reward in ep 097|
+|Att Loss 0.0326 | Att Reward in ep 003|
+|Def Estimated: [15 18 18 37 12]| Att Labels: [16 18 17 37 12]
+
+|Epoch 069/100| time: 1.74|
+|Def Loss 0.0371 | Def Reward in ep 090|
+|Att Loss 0.0368 | Att Reward in ep 010|
+|Def Estimated: [11 15 25 35 14]| Att Labels: [18 14 24 31 13]
+
+|Epoch 070/100| time: 1.62|
+|Def Loss 0.0567 | Def Reward in ep 096|
+|Att Loss 0.0340 | Att Reward in ep 004|
+|Def Estimated: [ 8 23 20 37 12]| Att Labels: [12 22 19 36 11]
+
+|Epoch 071/100| time: 1.64|
+|Def Loss 0.0470 | Def Reward in ep 095|
+|Att Loss 0.0295 | Att Reward in ep 005|
+|Def Estimated: [ 9 24 17 35 15]| Att Labels: [13 22 15 34 16]
+
+|Epoch 072/100| time: 1.68|
+|Def Loss 0.0635 | Def Reward in ep 093|
+|Att Loss 0.0317 | Att Reward in ep 007|
+|Def Estimated: [12 26 20 26 16]| Att Labels: [13 27 18 26 16]
+
+|Epoch 073/100| time: 1.65|
+|Def Loss 0.0478 | Def Reward in ep 094|
+|Att Loss 0.0369 | Att Reward in ep 006|
+|Def Estimated: [11 23 24 33  9]| Att Labels: [13 23 25 30  9]
+
+|Epoch 074/100| time: 1.76|
+|Def Loss 0.0669 | Def Reward in ep 093|
+|Att Loss 0.0384 | Att Reward in ep 007|
+|Def Estimated: [12 26 17 31 14]| Att Labels: [17 25 16 29 13]
+
+|Epoch 075/100| time: 1.70|
+|Def Loss 0.0747 | Def Reward in ep 091|
+|Att Loss 0.0382 | Att Reward in ep 009|
+|Def Estimated: [11 16 21 41 11]| Att Labels: [16 16 19 37 12]
+
+|Epoch 076/100| time: 1.57|
+|Def Loss 0.0668 | Def Reward in ep 094|
+|Att Loss 0.0390 | Att Reward in ep 006|
+|Def Estimated: [ 5 25 25 33 12]| Att Labels: [ 9 25 23 34  9]
+
+|Epoch 077/100| time: 1.64|
+|Def Loss 0.0773 | Def Reward in ep 093|
+|Att Loss 0.0356 | Att Reward in ep 007|
+|Def Estimated: [ 9 17 23 33 18]| Att Labels: [15 14 23 30 18]
+
+|Epoch 078/100| time: 1.78|
+|Def Loss 0.0742 | Def Reward in ep 093|
+|Att Loss 0.0295 | Att Reward in ep 007|
+|Def Estimated: [16 23 14 39  8]| Att Labels: [21 20 13 38  8]
+
+|Epoch 079/100| time: 1.70|
+|Def Loss 0.0717 | Def Reward in ep 093|
+|Att Loss 0.0265 | Att Reward in ep 007|
+|Def Estimated: [ 9 23 19 30 19]| Att Labels: [14 20 18 31 17]
+
+|Epoch 080/100| time: 1.60|
+|Def Loss 0.0922 | Def Reward in ep 096|
+|Att Loss 0.0314 | Att Reward in ep 004|
+|Def Estimated: [13 19 23 31 14]| Att Labels: [12 18 24 32 14]
+
+|Epoch 081/100| time: 1.55|
+|Def Loss 0.0912 | Def Reward in ep 092|
+|Att Loss 0.0348 | Att Reward in ep 008|
+|Def Estimated: [ 8 20 25 30 17]| Att Labels: [ 9 18 25 30 18]
+
+|Epoch 082/100| time: 1.50|
+|Def Loss 0.0970 | Def Reward in ep 092|
+|Att Loss 0.0369 | Att Reward in ep 008|
+|Def Estimated: [ 9 24 20 35 12]| Att Labels: [10 23 20 34 13]
+
+|Epoch 083/100| time: 1.50|
+|Def Loss 0.1320 | Def Reward in ep 093|
+|Att Loss 0.0330 | Att Reward in ep 007|
+|Def Estimated: [ 6 26 23 30 15]| Att Labels: [ 9 24 22 29 16]
+
+|Epoch 084/100| time: 1.52|
+|Def Loss 0.1083 | Def Reward in ep 097|
+|Att Loss 0.0330 | Att Reward in ep 003|
+|Def Estimated: [ 7 19 21 33 20]| Att Labels: [10 18 19 33 20]
+
+|Epoch 085/100| time: 1.85|
+|Def Loss 0.0969 | Def Reward in ep 092|
+|Att Loss 0.0271 | Att Reward in ep 008|
+|Def Estimated: [10 27 23 25 15]| Att Labels: [17 22 22 25 14]
+
+|Epoch 086/100| time: 1.52|
+|Def Loss 0.0904 | Def Reward in ep 095|
+|Att Loss 0.0236 | Att Reward in ep 005|
+|Def Estimated: [ 6 22 21 37 14]| Att Labels: [10 21 20 37 12]
+
+|Epoch 087/100| time: 1.70|
+|Def Loss 0.1010 | Def Reward in ep 091|
+|Att Loss 0.0245 | Att Reward in ep 009|
+|Def Estimated: [11 16 22 36 15]| Att Labels: [14 15 22 35 14]
+
+|Epoch 088/100| time: 1.68|
+|Def Loss 0.1111 | Def Reward in ep 090|
+|Att Loss 0.0283 | Att Reward in ep 010|
+|Def Estimated: [ 8 24 21 34 13]| Att Labels: [16 19 20 35 10]
+
+|Epoch 089/100| time: 1.49|
+|Def Loss 0.1022 | Def Reward in ep 096|
+|Att Loss 0.0262 | Att Reward in ep 004|
+|Def Estimated: [ 8 21 18 38 15]| Att Labels: [ 9 20 18 37 16]
+
+|Epoch 090/100| time: 1.54|
+|Def Loss 0.0766 | Def Reward in ep 095|
+|Att Loss 0.0241 | Att Reward in ep 005|
+|Def Estimated: [ 6 24 21 33 16]| Att Labels: [ 9 24 18 34 15]
+
+|Epoch 091/100| time: 1.52|
+|Def Loss 0.0787 | Def Reward in ep 092|
+|Att Loss 0.0237 | Att Reward in ep 008|
+|Def Estimated: [ 7 18 24 31 20]| Att Labels: [ 9 16 23 33 19]
+
+|Epoch 092/100| time: 1.62|
+|Def Loss 0.0806 | Def Reward in ep 095|
+|Att Loss 0.0244 | Att Reward in ep 005|
+|Def Estimated: [10 23 20 34 13]| Att Labels: [13 22 19 32 14]
+
+|Epoch 093/100| time: 1.67|
+|Def Loss 0.0700 | Def Reward in ep 089|
+|Att Loss 0.0186 | Att Reward in ep 011|
+|Def Estimated: [ 9 22 20 36 13]| Att Labels: [13 21 17 36 13]
+
+|Epoch 094/100| time: 1.56|
+|Def Loss 0.0634 | Def Reward in ep 096|
+|Att Loss 0.0218 | Att Reward in ep 004|
+|Def Estimated: [10 14 22 37 17]| Att Labels: [12 14 20 35 19]
+
+|Epoch 095/100| time: 1.70|
+|Def Loss 0.0723 | Def Reward in ep 095|
+|Att Loss 0.0171 | Att Reward in ep 005|
+|Def Estimated: [10 19 28 27 16]| Att Labels: [14 18 26 25 17]
+
+|Epoch 096/100| time: 1.64|
+|Def Loss 0.0671 | Def Reward in ep 092|
+|Att Loss 0.0252 | Att Reward in ep 008|
+|Def Estimated: [10 22 22 32 14]| Att Labels: [12 24 22 26 16]
+
+|Epoch 097/100| time: 1.49|
+|Def Loss 0.0538 | Def Reward in ep 092|
+|Att Loss 0.0282 | Att Reward in ep 008|
+|Def Estimated: [ 5 24 23 36 12]| Att Labels: [ 8 24 22 32 14]
+
+|Epoch 098/100| time: 1.62|
+|Def Loss 0.0535 | Def Reward in ep 094|
+|Att Loss 0.0202 | Att Reward in ep 006|
+|Def Estimated: [ 9 21 17 40 13]| Att Labels: [13 22 15 37 13]
+
+|Epoch 099/100| time: 1.78|
+|Def Loss 0.0537 | Def Reward in ep 093|
+|Att Loss 0.0264 | Att Reward in ep 007|
+|Def Estimated: [15 22 17 36 10]| Att Labels: [17 20 16 36 11]
+
+GPU Memory Usage:
+Allocated: 18.34 MB
+Cached: 24.00 MB
