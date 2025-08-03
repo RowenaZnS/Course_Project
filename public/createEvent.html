@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<!-- XU Zhuoning liu xinyan 21101256d;22097739d -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="./js/createEvent.js"></script>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <style>
+    .btn-style{
+      background: rgb(101,94,215);
+      background: linear-gradient(90deg, rgba(101,94,215,1) 0%, rgba(0,212,255,1) 100%);  
+
+    }
+    body { font-family: Arial}
+    #seating-area { margin-top: 20px; }
+    .seat { width: 40px; height: 40px; border-radius: 5px; display: inline-block; margin: 5px; text-align: center; line-height: 40px; background-color: green; }
+    .occupied { background-color: red; }
+    .economy { background-color: yellow; }
+    .first-class { background-color: lightgreen; }
+    .row-label { display: inline-block; width: 20px; text-align: center; }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" style="height:12vh">
+        <div class="container-fluid rol ">
+            <div class="d-none d-lg-block col-lg-2">
+                <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="./media/cinema_logo.jpg" alt="Logo" style="width:10vw">
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Lab2_navbar" aria-controls="Lab2_navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="Lab2_navbar">
+                    <a class="nav-link active" aria-current="page" href="./index.html"><button type="button"
+                            class="btn btn-outline-primary me-lg-2"
+                            style=" --bs-btn-border-color:none">Home</button></a>
+                    <a class="nav-link active" aria-current="page" href="./admin_show_movie.html"><button type="button"
+                            class="btn btn-outline-primary mx-lg-2 "
+                            >Mange Movies</button></a>
+                    <a class="nav-link active" aria-current="page" href="./admin_order.html"><button type="button"
+                            class="btn btn-outline-primary mx-lg-2" style=" --bs-btn-border-color:none">all
+                            order</button></a>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </nav>
+  <button type="button" class="btn btn-primary me-2 mt-3 mx-5" id="Back">Back</button>
+  <div class="container my-3" style="width:100vw">
+    <form method="post" action="/admin/createEvent" enctype="multipart/form-data" id="movie_info">
+     
+      <div class="row">
+        <div class="col-5 justify-content-center align-items-center" style="height: 100%; text-align: center;">
+          <img src="./media/default.jpg" class="border rounded" style="height:20vw" alt="image">
+          <div class="justify-content-center align-items-center" style="text-align: center;">
+            <label for="formFile" class="form-label">Change your Movie image</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="mb-3 row">
+            <label for="name" class="col-sm-3 col-form-label">movie name:</label>
+            <div class="col-sm-9 ">
+              <input type="text" class="form-control" id="name" placeholder="movie name">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="price" class="col-sm-3 col-form-label">price:</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="price" value="20">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="nickname" class="col-sm-3 col-form-label">Date and Time:</label>
+            <div class="col-sm-9">
+                <input type="datetime-local" id="date" name="date" required class="border border-primary rounded-3 p-1 form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="venue" class="col-sm-3 col-form-label">Select Venue:</label>
+            <div class="col-sm-9">
+                <select id="venue" name="venue" required class="form-control">
+                    <option value="venue1">Venue 1</option>
+                    <option value="venue2">Venue 2</option>
+                    <option value="venue3">Venue 3</option>
+                </select>
+            </div>
+          </div>
+         
+          <div class="mb-3">
+            <label for="introduction" class="form-label">Introduction: </label>
+            <textarea class="form-control" id="introduction" rows="3" value="introduction">introduction</textarea>
+          </div>
+          
+          <div class="justify-content-center align-items-center" style="text-align: center;">
+            <button type="button" class="submit-btn " id="update">Add event</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+<div>
+  <h1>Set the cinema map</h1>
+  <label for="rows">Number of rows:</label>
+  <input type="number" id="rows" value="3" min="1">
+  <label for="cols">Number of cols:</label>
+  <input type="number" id="cols" value="5" min="1">
+  <button onclick="generateSeats()">Generate map:</button>
+  
+  <div id="seating-area"></div>
+  <button onclick="downloadJSON()">DownJSON</button>
+</div>
+</body>
+<footer class="bg-dark text-white text-center justify-content-center py-3">
+  <div id="footer">&copy;&lt;21101256d;22097739d&gt;&lt;XUZhuoning;LIUXinyan&gt;EIE4432 Project <br /><span id="time"></span></div>
+</footer>
+<script>
+  function date() {
+    var Time = 'AM';
+    var date = new Date();
+    this.year = date.getFullYear();
+    this.month = date.getMonth() + 1;
+    this.date = date.getDate();
+    this.hour = date.getHours() < 10 ? '0' + date.getHours() : date.getHours();
+    this.minute = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
+    this.second = date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds();
+    if (date.getHours() > 12) {
+      this.hour = date.getHours() % 12;
+      Time = 'PM';
+    }
+    if (date.getHours() == 12) {
+      Time = 'PM';
+    }
+    document.getElementById('time').innerHTML =
+      this.month +
+      '/' +
+      this.date +
+      '/' +
+      this.year +
+      ',' +
+      this.hour +
+      ':' +
+      this.minute +
+      ':' +
+      this.second +
+      ' ' +
+      Time;
+  }
+  date();
+  let seatData = [];
+
+    function generateSeats() {
+        const rows = document.getElementById('rows').value;
+        const cols = document.getElementById('cols').value;
+        const seatingArea = document.getElementById('seating-area');
+        seatingArea.innerHTML = '<h2>Screen</h2>';
+        seatData = [];
+
+        for (let r = 0; r < rows; r++) {
+            const rowDiv = document.createElement('div');
+            const select = document.createElement('select');
+            select.innerHTML = `<option value="100">100</option>
+                               <option value="50">50</option>
+                               <option value="200">200</option>`;
+            select.onchange = () => updateSeatColors(rowDiv, select.value);
+
+            // 添加行字母标签
+            const rowLabelStart = document.createElement('span');
+            rowLabelStart.className = 'row-label';
+            rowLabelStart.innerText = String.fromCharCode(65 + r); // A, B, C...
+
+            const rowLabelEnd = document.createElement('span');
+            rowLabelEnd.className = 'row-label';
+            rowLabelEnd.innerText = String.fromCharCode(65 + r); // A, B, C...
+
+            rowDiv.appendChild(rowLabelStart);
+            rowDiv.appendChild(select);
+            for (let c = 0; c < cols; c++) {
+                const seatNumber = r * cols + c + 1;
+                const seat = document.createElement('div');
+                seat.className = 'seat';
+                seat.innerText = seatNumber;
+
+                // 默认状态为不占用
+                seat.setAttribute('data-user', '空闲');
+
+                seat.onmouseover = function() {
+                    alert(`座位 ${seatNumber} 状态: ${seat.getAttribute('data-user')}`);
+                };
+
+                rowDiv.appendChild(seat);
+                seatData.push({
+                    seatNumber: seatNumber,
+                    user: seat.getAttribute('data-user'),
+                    occupy: false // 默认不占用
+                });
+            }
+            rowDiv.appendChild(rowLabelEnd);
+            seatingArea.appendChild(rowDiv);
+        }
+    }
+
+    function updateSeatColors(rowDiv, price) {
+        const seats = rowDiv.querySelectorAll('.seat');
+        seats.forEach(seat => {
+            seat.classList.remove('economy', 'first-class');
+            if (!seat.classList.contains('occupied')) {
+                if (price == '50') {
+                    seat.classList.add('economy');
+                } else {
+                    seat.classList.add('first-class');
+                }
+            }
+        });
+    }
+
+    function downloadJSON() {
+        const json = JSON.stringify(seatData, null, 2);
+        const blob = new Blob([json], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'seats.json';
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+</html>

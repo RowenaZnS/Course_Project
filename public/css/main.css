@@ -1,0 +1,124 @@
+.btn-bd-primary {
+    color:black;
+    --bs-btn-bg: #0000;
+    --bs-btn-active-bg:#edeef8;
+    --bs-btn-border-color: #4d5bbc;
+    --bs-btn-active-border-color: #4d5bbc;
+    --bs-btn-hover-border-color:#3a7dff;
+    --bs-btn-box-shadow: black 0px 4px 5px;
+    --bs-btn-border-width: 2px;
+  }
+.event-card {
+    
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.event-date {
+    font-size: 18px;
+    color: #d9534f;
+}
+.event-day {
+    color:black;
+}
+
+.event-month {
+    font-size: 18px;
+}
+.wide-btn {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(101,94,215); /* Fallback for older browsers */
+    background: linear-gradient(90deg, rgba(101,94,215,1) 0%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  /* 悬停效果 */
+  .submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(101,94,215,1) 100%);
+  }
+
+  /* 点击效果 */
+  .submit-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  table th, table td {
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+
+  table th {
+    background-color: #f4f4f4;
+    color: #555;
+    font-weight: bold;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .status-completed {
+    color: green;
+    font-weight: bold;
+  }
+
+  .status-pending {
+    color: orange;
+    font-weight: bold;
+  }
+
+  .footer {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    color: #888;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pagination button {
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pagination button:hover {
+    background: #005fa3;
+  }
+
+  .pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }

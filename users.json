@@ -1,0 +1,34 @@
+[
+  {
+    "userid":"xuzhuoning_03",
+    "username": "XUZHUONING",
+    "password": "20030317",
+    "role": "user",
+    "enabled": true,
+    "birthday":"2003-01-01",
+    "email":"21101256d@connect.polyu.hk",
+    "gender":"male",
+    "order":[
+      {
+        "order_id":"1732735433315_xuzhuoning_03",
+        "Purchase_Date":"2024-11-28 3:23:53",
+        "Event_id":"Chinese_Ethnic_Song_and_Dance_Gala",
+        "Event_Name":"Chinese Ethnic Song and Dance Gala",
+        "Event_Date":"2024/02/26",
+        "seat_list":"A13,F15,G13",
+        "total_cost":"700",
+        "tickets":"[{\"name\":\"VIP Plus Pro Max\",\"price\":\"400\",\"id\":\"e4829e\",\"num\":1},{\"name\":\"VIP\",\"price\":\"200\",\"id\":\"e29c4f\",\"num\":1},{\"name\":\"Normal\",\"price\":\"100\",\"id\":\"8ec224\",\"num\":1}]"       
+      },
+      {
+        "order_id":"1732735433316_xuzhuoning_03",
+        "Purchase_Date":"2024-11-28 3:23:53",
+        "Event_id":"Chinese_Ethnic_Song_and_Dance_Gala",
+        "Event_Name":"Chinese Ethnic Song and Dance Gala",
+        "Event_Date":"2024/02/26",
+        "seat_list":"A14,F13,G12",
+        "total_cost":"700",
+        "tickets":"[{\"name\":\"VIP Plus Pro Max\",\"price\":\"400\",\"id\":\"e4829e\",\"num\":1},{\"name\":\"VIP\",\"price\":\"200\",\"id\":\"e29c4f\",\"num\":1},{\"name\":\"Normal\",\"price\":\"100\",\"id\":\"8ec224\",\"num\":1}]"       
+      }
+    ]
+  }
+]
