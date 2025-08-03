@@ -1,0 +1,255 @@
+  <!DOCTYPE html>
+<html lang="en">
+<!-- XU Zhuoning liu xinyan 21101256d;22097739d -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>XU Zhuoning liu xinyan 21101256d;22097739d</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <link rel="stylesheet" href="./css/css_index.css">
+</head>
+
+<body>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; 
+        }
+        section {
+            height: 100vh; 
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: white;
+        }
+
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+        #page1 {
+            background-image: url('./img/image.jpg');
+            background-size: cover; 
+            background-position: center; 
+        }
+
+        #page2 {
+            background-image: url('./img/2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        #page3 {
+            background-image: url('./img/cinema_back.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        #page4 {
+            background-image: url('./img/Readings 1540 x 1020.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            position: relative;
+            z-index: 2; 
+            text-align: center; 
+            padding: 20px; 
+        }
+        
+        .Fxxkmargin{
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+
+        .button-container {
+            text-align: center; 
+            position: relative;
+            z-index: 2; 
+            margin-top: 0px; 
+        }
+
+        
+    </style>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" style="height:12vh; width:100%; position:fixed;z-index: 4; top:0;">
+        <div class="container-fluid rol ">
+            <div class="d-none d-lg-block col-lg-2">
+                <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="./media/cinema_logo.jpg" alt="Logo" style="width:10vw">
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Lab2_navbar" aria-controls="Lab2_navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="Lab2_navbar">
+                    <a class="nav-link active" aria-current="page" href="./index.html"><button type="button"
+                            class="btn btn-outline-primary me-lg-2 fw-bolder">Home</button></a>
+                    <a class="nav-link active" aria-current="page" href="./movielist.html"><button type="button"
+                            class="btn btn-outline-primary mx-lg-2"
+                            style=" --bs-btn-border-color:none">Movies</button></a>
+                    <a class="nav-link active" aria-current="page" href="./myorder.html"><button type="button"
+                            class="btn btn-outline-primary mx-lg-2" style=" --bs-btn-border-color:none">My
+                            order</button></a>
+                    <a class="nav-link active" aria-current="page" href="./myorder.html"><button type="button"
+                                class="btn btn-outline-primary mx-lg-2" style=" --bs-btn-border-color:none">About</button></a>
+                    <a class="nav-link active" aria-current="page" href="./myprofile.html"><button type="button"
+                            class="btn  btn-outline-primary mx-lg-2" style=" --bs-btn-border-color:none">My
+                            profile</button></a>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-3 mb-5" id="menu_container" style="z-index: 1;">
+        <div style="width:100vm">
+            <section id="page1" style="z-index: 1;">
+                <div class="Fxxkmargin">
+                    <div class="content" style="position: relative; vertical-align: middle;">
+                        <h1 style="font-size: 100px; font-weight: 600;">PolyU Cinema</h1>
+                        <h3>Welcome to PolyU Cinema!</h3>
+                </div>
+                    
+                    <div class="content">
+                        <p style="font-size: 15px; max-width: 600px; text-align:left;" >PolyU Cinema celebrates the art of film, offering
+                            a diverse array of genres that explore human emotions,
+                            societal themes, and creative storytelling.
+                            From its origins in the silent film era to today's digital
+                            masterpieces, cinema at PolyU provides a vibrant
+                            cultural platform where technology meets imagination,
+                            connecting audiences across the globe through the universal
+                            language of motion pictures. Our state-of-the-art facilities
+                            feature cutting-edge sound and
+                            projection technology, comfortable seating,
+                            and a welcoming atmosphere that enhances every viewing
+                            experience. Whether you're a film aficionado or a casual
+                            viewer, PolyU Cinema is the perfect place to lose yourself
+                            in the magic of the movies.
+                            </p>
+                        <br>
+                        <!-- <div class="button-container">
+                            <a href="#page2" class="btn">Movies in Cinema</a>
+                            <a href="#page3" class="btn">Facilities in Cinema</a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                
+            </section>
+        </div>
+        
+        <section id="page2" style="z-index: 1;">
+            <div class="Fxxkmargin">
+                <div class="content" style="position: relative; vertical-align: middle;">
+                    <h1 style="font-size: 80px; font-weight: 400;">Global Cinema Showcase</h1>
+                    <p style="max-width: 1200px; font-size: 20px;">
+                        Welcome to our cinema, where the world of film unfolds before your eyes!
+                        We pride ourselves on offering an extensive and diverse selection of movies,
+                        featuring the latest
+                        releases from around the globe and timeless classics from various eras. Our schedule
+                        is packed with multiple showtimes to accommodate every lifestyle and preference,
+                        ensuring that you can catch your desired film at your convenience.
+                    </p>
+
+                    <p style="max-width: 1200px; font-size: 20px;">
+                        Experience the thrill of new discoveries and the nostalgia of revered classics,
+                        all under one roof. Join us for a cinematic journey that celebrates cultural
+                        diversity and cinematic brilliance
+                        with timely updates and a wide array of choices.
+                    </p>
+
+
+                </div>
+                
+            </div>
+        </section>
+        <section id="page3" style="z-index: 1;">
+            <div class="Fxxkmargin">
+                <div class="content" style="position: relative; vertical-align: middle;">
+                    <h1 style="font-size: 60px; font-weight: 600;">Premier Facilities for Better Experience</h1>
+                    <p style="max-width: 1200px; font-size: 20px;">
+                        At our cinema, we're not just about the films—we're about the entire cinematic experience. Our state-of-the-art facilities are equipped with the latest IMAX technology, ensuring that every scene is as immersive as possible with crystal-clear images and powerful, precise sound. Our seating is designed with your comfort in mind, featuring plush, adjustable chairs that include massage options to enhance your relaxation. Whether you're enjoying a high-octane blockbuster or a serene art film,
+                        our amenities cater to your every need, making each visit a luxurious escape from the ordinary.
+                    </p>
+
+                </div>
+                
+            </div>
+        </section>
+        <section id="page4">
+            <div class="Fxxkmargin">
+                <div class="content" style="position: relative; vertical-align: middle;">
+                    <h1 style="font-size: 80px; font-weight: 400;">Enjoy Leisure Time Together</h1>
+                    <p style="max-width: 1200px; font-size: 20px;">
+                        Gather your family and friends and make memories at our cinema where leisure and entertainment meet. Our welcoming environment provides the perfect backdrop for enjoying films together, turning movie watching into a special event. Whether it’s a gripping adventure, a belly-laugh comedy, or a heart-touching drama, our cinema is the ideal setting for spending quality time with loved ones.
+                    </p>
+                    <p style="max-width: 1200px; font-size: 20px;">
+                        Join us for an unforgettable cinematic experience in comfort and style.
+                    </p>
+                        
+                </div>
+                
+            </div>
+        </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        let currentSection = 0;
+        let isScrolling = false; 
+        let sections = document.querySelectorAll('section');
+        window.addEventListener('wheel', (e) => {
+            if (isScrolling) return;
+            isScrolling = true;
+            if (e.deltaY > 0) {
+                if (currentSection < sections.length - 1) {
+                    currentSection++;
+                }
+            } else { 
+                if (currentSection > 0) {
+                    currentSection--;
+                }
+            } 
+            sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+    
+            setTimeout(() => {
+                isScrolling = false;
+            }, 1000); 
+        });
+    </script>
+    </div>
+    <footer class="bg-dark text-white text-center justify-content-center fixed-bottom py-3">
+        <div>&copy;&lt;21101256d&gt;&lt;XUZhuoning&gt;EIE4432 Lab3 Project</div>
+    </footer>
+</body>
+
+</html>

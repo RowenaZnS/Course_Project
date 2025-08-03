@@ -1,0 +1,210 @@
+[
+    {
+        "name": "Chinese Ethnic Song and Dance Gala",
+        "id": "polyu01",
+        "type": "Song&Dance",
+        "price": "$20",
+        "aaaa":"ssss",
+        "data":"2024/02/26",
+        "date": [
+            {
+                "id": "2024/02/26_12:30 AM",
+                "general_date": "2024/02/26",
+                "year": "2024",
+                "month": "02",
+                "day": "26",
+                "week": "Tuesday",
+                "general_time": "12:30 AM",
+                "start_hour": "12",
+                "start_min": "30",
+                "start_AP": "AM"
+            },
+            {   
+                "id": "2024/02/27_12:30 AM",
+                "general_date": "2024/02/27",
+                "year": "2024",
+                "month": "02",
+                "day": "27",
+                "week": "Wednesday",
+                "general_time": "12:40 AM",
+                "start_hour": "12",
+                "start_min": "40",
+                "start_AP": "AM"
+            }
+        ],
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "200",
+        "introduction": "Grab the chance to appreciate the fabulous Chinese ethnic culture through their songs and dances.A limited number of complimentary tickets are now being offered to PolyU students and staff on a first-come, first-served basis.",
+        "stars": "5",
+        "image": "media/moviedata/Chinese_Ethnic_Song_and_Dance_Gala/poster.png",
+        "venue": "Jockey Club Auditorium",
+        "seat_type": [
+            {
+                "name": "VIP Plus Pro Max",
+                "price": "400",
+                "color": "#e4829e",
+                "start_line": "A",
+                "end_line": "C"
+            },
+            {
+                "name": "VIP",
+                "price": "200",
+                "color": "#e29c4f",
+                "start_line": "D",
+                "end_line": "F"
+            },
+            {
+                "name": "Normal",
+                "price": "100",
+                "color": "#8ec224",
+                "start_line": "G",
+                "end_line": "Z"
+            }
+        ],
+        "seatmap": "../"
+    },
+    {
+        "name": "Chang An",
+        "id": "polyu02",
+        "type": "Animation",
+        "price": "$30",
+        "data":"2024/02/27",
+        "date": [
+            {
+                "id": "2024/02/26_12:30 AM",
+                "general_date": "2024/02/26",
+                "year": "2024",
+                "month": "02",
+                "day": "26",
+                "week": "Tuesday",
+                "general_time": "12:30 AM",
+                "start_hour": "12",
+                "start_min": "30",
+                "start_AP": "AM"
+            },
+            {
+                "general_date": "2024/02/27",
+                "year": "2024",
+                "month": "02",
+                "day": "27",
+                "week": "Wednesday",
+                "general_time": "12:40 AM",
+                "start_hour": "12",
+                "start_min": "40",
+                "start_AP": "AM"
+            }
+        ],
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "0",
+        "introduction": "Events held by PolyU",
+        "stars": "5",
+        "image": "media/moviedata/changan/poster.png",
+        "venue": "Jockey Club Auditorium",
+        "seat_type": [
+            {
+                "name": "VIP Plus Pro Max",
+                "price": "400",
+                "color": "#e4829e",
+                "start_line": "A",
+                "end_line": "C"
+            },
+            {
+                "name": "VIP",
+                "price": "200",
+                "color": "#e29c4f",
+                "start_line": "D",
+                "end_line": "F"
+            },
+            {
+                "name": "Normal",
+                "price": "100",
+                "color": "#8ec224",
+                "start_line": "G",
+                "end_line": "Z"
+            }
+        ],
+        "seatmap": "../"
+    },
+    {
+        
+        "name": "THE LAST DANCE",
+        "id": "polyu03",
+        "type": "Song&Dance",
+        "price": "$20",
+        "data": "2024/02/26",
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "200",
+        "introduction": "Events held by PolyU",
+        "stars": "5",
+        "image": "./media/moviedata/podiyu.jpg",
+        "venue": "Jockey Club Auditorium"
+    },
+    {
+        "name": "Chinese Ethnic Song and Dance Gala",
+        "type": "Song&Dance",
+        "price": "$20",
+        "data": "2024/02/26",
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "200",
+        "introduction": "Events held by PolyU",
+        "stars": "5",
+        "image": "media/moviedata/Chinese_Ethnic_Song_and_Dance_Gala/poster.png",
+        "venue": "Jockey Club Auditorium"
+    },
+    {
+        "name": "Chinese Ethnic Song and Dance Gala",
+        "type": "Song&Dance",
+        "price": "$20",
+        "data": "2024/02/26",
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "200",
+        "introduction": "Events held by PolyU",
+        "stars": "5",
+        "image": "media/moviedata/Chinese_Ethnic_Song_and_Dance_Gala/poster.png",
+        "venue": "Jockey Club Auditorium"
+    },
+    {
+        "name": "Chinese Ethnic Song and Dance Gala",
+        "type": "Song&Dance",
+        "price": "$20",
+        "data": "2024/02/26",
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "200",
+        "introduction": "Events held by PolyU1111111111111111111111111111111111111",
+        "stars": "5",
+        "image": "media/moviedata/Chinese_Ethnic_Song_and_Dance_Gala/poster.png",
+        "venue": "Jockey Club Auditorium"
+    },
+    {
+        "name": "Chinese Ethnic Song and Dance Gala",
+        "type": "Song&Dance",
+        "price": "$20",
+        "data": "2024/02/26",
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "200",
+        "introduction": "Events held by PolyU",
+        "stars": "5",
+        "image": "media/moviedata/Chinese_Ethnic_Song_and_Dance_Gala/poster.png",
+        "venue": "Jockey Club Auditorium"
+    },
+    {
+        "name": "Chinese Ethnic Song and Dance Gala",
+        "type": "Song&Dance",
+        "price": "$20",
+        "data": "2024/02/26",
+        "length": "100 min",
+        "director": "PolyU",
+        "remainseat": "200",
+        "introduction": "Events held by PolyU",
+        "stars": "5",
+        "image": "media/moviedata/Chinese_Ethnic_Song_and_Dance_Gala/poster.png",
+        "venue": "Jockey Club Auditorium"
+    }
+]
