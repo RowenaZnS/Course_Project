@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mineral MapReduce Flow</title>
+    <!-- 引入 Mermaid.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            mermaid.initialize({startOnLoad: true});
+        });
+    </script>
+</head>
+<body>
+    <div class="mermaid">
+        flowchart LR
+          subgraph "User Program"
+            user["MRMineral -k N"]
+          end
+
+          subgraph "Master"
+            master["MRJob Framework"]
+          end
+
+          subgraph "Input Files"
+            input1["constellation,star,planet,mineral,quantity,value,..."]
+            input2["constellation,star,planet,mineral,quantity,value,..."]
+            input3["constellation,star,planet,mineral,quantity,value,..."]
+          end
+
+          subgraph "Map Phase - Step 1"
+            map1["mapper: (star_system, mineral_value)"]
+            map2["mapper: (star_system, mineral_value)"]
+            map3["mapper: (star_system, mineral_value)"]
+          end
+
+          subgraph "Intermediate Files - Step 1"
+            int1["(star_system1, mineral_value1)"]
+            int2["(star_system2, mineral_value2)"]
+            int3["(star_system3, mineral_value3)"]
+            int4["(star_system4, mineral_value4)"]
+            int5["(star_system5, mineral_value5)"]
+          end
+
+          subgraph "Reduce Phase - Step 1"
+            red1A["reducer: Sum(star_system1 values)"]
+            red1B["reducer: Sum(star_system2 values)"]
+            red1C["reducer: Sum(star_system3 values)"]
+          end
+
+          subgraph "Intermediate Files - Step 2"
+            int2_1["(None, (total_value1, star_system1))"]
+            int2_2["(None, (total_value2, star_system2))"]
+            int2_3["(None, (total_value3, star_system3))"]
+          end
+
+          subgraph "Reduce Phase - Step 2"
+            red2["reducer_find_top_k: Sort by value & select top K"]
+          end
+
+          subgraph "Output Files"
+            out1["star_system1: total_value1"]
+            out2["star_system2: total_value2"]
+            out3["star_system3: total_value3"]
+            outK["...up to K results"]
+          end
+
+          user -->|"fork"| master
+          master -->|"assign map"| map1 & map2 & map3
+          input1 -->|"read"| map1
+          input2 -->|"read"| map2
+          input3 -->|"read"| map3
+          map1 -->|"local write"| int1 & int2
+          map2 -->|"local write"| int3
+          map3 -->|"local write"| int4 & int5
+          master -->|"assign reduce step 1"| red1A & red1B & red1C
+          int1 -->|"remote read"| red1A
+          int2 & int3 -->|"remote read"| red1B
+          int4 & int5 -->|"remote read"| red1C
+          red1A -->|"write"| int2_1
+          red1B -->|"write"| int2_2
+          red1C -->|"write"| int2_3
+          master -->|"assign reduce step 2"| red2
+          int2_1 & int2_2 & int2_3 -->|"remote read"| red2
+          red2 -->|"write"| out1 & out2 & out3 & outK
+
+          classDef process fill:#f9f,stroke:#333,stroke-width:2px;
+          classDef data fill:#bbf,stroke:#333,stroke-width:1px;
+          classDef master fill:#ffa,stroke:#333,stroke-width:2px;
+
+          class map1,map2,map3,red1A,red1B,red1C,red2 process;
+          class input1,input2,input3,int1,int2,int3,int4,int5,int2_1,int2_2,int2_3,out1,out2,out3,outK data;
+          class master,user master;
+    </div>
+</body>
+</html>

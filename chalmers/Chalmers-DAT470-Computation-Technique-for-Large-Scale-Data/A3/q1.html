@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mineral MapReduce Flow</title>
+    <!-- 引入 Mermaid.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            mermaid.initialize({startOnLoad: true});
+        });
+    </script>
+</head>
+<body>
+    <div class="mermaid">
+flowchart LR
+  subgraph "User Program"
+    user["MRMineral"]
+  end
+
+  subgraph "Master"
+    master["MRJob Framework"]
+  end
+
+  subgraph "Input Files"
+    input1["constellation,star,planet,mineral,quantity,value,..."]
+    input2["constellation,star,planet,mineral,quantity,value,..."]
+    input3["constellation,star,planet,mineral,quantity,value,..."]
+  end
+
+  subgraph "Map Phase"
+    map1["mapper: (star_system, mineral_value)"]
+    map2["mapper: (star_system, mineral_value)"]
+    map3["mapper: (star_system, mineral_value)"]
+  end
+
+  subgraph "Intermediate Files"
+    int1["(star_system1, mineral_value1)"]
+    int2["(star_system1, mineral_value2)"]
+    int3["(star_system2, mineral_value3)"]
+    int4["(star_system3, mineral_value4)"]
+    int5["(star_system4, mineral_value5)"]
+  end
+
+  subgraph "Reduce Phase"
+    red1["reducer1: Sum(Prime Capella values)"]
+    red2["reducer2: Sum(Alpha Cancri values)"]
+    red3["reducer3: Sum(Gamma Sagittae values)"]
+    red4["reducer4: Sum(Beta Lyrae values)"]
+    red5["reducer5: Sum(Alpha Geminorum values)"]
+  end
+
+  subgraph "Output Files"
+    out1["Prime Capella: total_value"]
+    out2["Alpha Cancri: total_value"]
+    out3["Gamma Sagittae: total_value"]
+    out4["Beta Lyrae: total_value"]
+    out5["Alpha Geminorum: total_value"]
+  end
+
+  user -->|"fork"| master
+  master -->|"assign map"| map1 & map2 & map3
+  input1 -->|"read"| map1
+  input2 -->|"read"| map2
+  input3 -->|"read"| map3
+  map1 -->|"local write"| int1 & int2
+  map2 -->|"local write"| int3
+  map3 -->|"local write"| int4 & int5
+  master -->|"assign reduce"| red1 & red2 & red3 & red4 & red5
+  int1 & int2 -->|"remote read"| red1
+  int3 -->|"remote read"| red2
+  int4 -->|"remote read"| red3
+  int5 -->|"remote read"| red4 & red5
+  red1 -->|"write"| out1
+  red2 -->|"write"| out2
+  red3 -->|"write"| out3
+  red4 -->|"write"| out4
+  red5 -->|"write"| out5
+
+  classDef process fill:#f9f,stroke:#333,stroke-width:2px;
+  classDef data fill:#bbf,stroke:#333,stroke-width:1px;
+  classDef master fill:#ffa,stroke:#333,stroke-width:2px;
+
+  class map1,map2,map3,red1,red2,red3,red4,red5 process;
+  class input1,input2,input3,int1,int2,int3,int4,int5,out1,out2,out3,out4,out5 data;
+  class master,user master;
+
+    </div>
+</body>
+</html>
